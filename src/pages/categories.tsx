@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { JSX, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Scale, Gavel, Shield, BookOpen, Hand, Landmark } from "lucide-react";
 import GlassNav from "../components/nav";

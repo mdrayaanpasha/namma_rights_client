@@ -6,7 +6,8 @@
   ],
   
     "compilerOptions": {
-      "jsx": "react-jsx", // or "react" if using an older setup
+      "jsx": "react",
+
       "skipLibCheck": true // (optional) Avoids type checking in dependencies
     }
   
