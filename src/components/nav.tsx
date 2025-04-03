@@ -11,7 +11,7 @@ const GlassNav = () => {
         <div className="backdrop-blur-lg bg-white/10 border border-white/10 rounded-2xl shadow-lg">
           <div className="flex items-center justify-between p-4">
             {/* Logo */}
-            <div className="flex items-center" onClick={e=>window.location.href="/"}>
+            <div className="flex items-center" onClick={(e: React.MouseEvent)=>window.location.href="/"}>
               <span className="text-black text-2xl font-bold">NammaRights</span>
             </div>
 
@@ -24,7 +24,7 @@ const GlassNav = () => {
                 Terms Of Use
               </a>
               
-              <button className="bg-white/10 hover:bg-white/20 px-6 py-2 rounded-xl text-black transition-all" onClick={e=>window.location.href="/categories"}>
+              <button className="bg-white/10 hover:bg-white/20 px-6 py-2 rounded-xl text-black transition-all" onClick={(e: React.MouseEvent)=>window.location.href="/categories"}>
                 Get Started
               </button>
             </div>

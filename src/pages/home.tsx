@@ -21,7 +21,7 @@ export default function Homepage() {
                 Experience interactive scenarios that teach you how to navigate actual legal situations. 
                 Learn by doing, not just reading.
               </p>
-              <button className="bg-black text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-black-700 transition-all hover:scale-105" onClick={e=>window.location.href="/categories"}>
+              <button className="bg-black text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-black-700 transition-all hover:scale-105" onClick={(e: React.MouseEvent)=>window.location.href="/categories"}>
                 Start Simulation Now →
               </button>
             </div>
@@ -104,7 +104,7 @@ export default function Homepage() {
               Be prepared, stay informed, and protect your rights with confidence. 
               Start your free learning session today.
             </p>
-            <button className="bg-white text-black px-8 py-4 rounded-xl text-lg font-semibold hover:bg-black-50 transition-all" onClick={e=>window.location.href="/categories"}>
+            <button className="bg-white text-black px-8 py-4 rounded-xl text-lg font-semibold hover:bg-black-50 transition-all" onClick={(e: React.MouseEvent) => window.location.href="/categories"}>
               Protect Your Rights Now →
             </button>
           </div>
