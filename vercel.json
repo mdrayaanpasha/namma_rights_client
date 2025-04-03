@@ -1,0 +1,33 @@
+{
+    "routes": [
+      {
+        "src": "/",
+        "dest": "/"
+      },
+      {
+        "src": "/categories",
+        "dest": "/"
+      },
+      {
+         "src": "/questions/(.*)",
+        "dest": "/"
+      },
+        {
+            "src": "/features",
+            "dest": "/"
+        },
+        {
+            "src": "/about",
+            "dest": "/"
+        },
+        {
+            "src": "/terms",
+            "dest": "/"
+        }
+        
+
+
+
+    ]
+  }
+  
