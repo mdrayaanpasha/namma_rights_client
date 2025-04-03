@@ -18,7 +18,7 @@ const RightsList = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:1000/api/rights/list-rights")
+    fetch("https://namma-rights-server.vercel.app/api/rights/list-rights")
       .then((response) => response.json())
       .then((data: string[]) => {
         const rightsWithIcons = data.map(right => ({

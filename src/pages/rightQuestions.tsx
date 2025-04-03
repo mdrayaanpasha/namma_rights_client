@@ -12,7 +12,7 @@ const RightsQuestions = () => {
 
   useEffect(() => {
     if (right) {
-      fetch(`http://localhost:1000/api/rights/rights-questions/${encodeURIComponent(right)}`)
+      fetch(`https://namma-rights-server.vercel.app/api/rights/rights-questions/${encodeURIComponent(right)}`)
         .then((response) => response.json())
         .then((data) => {
           setQuestions(data.questions);
@@ -36,12 +36,12 @@ const RightsQuestions = () => {
     const requestBody = { type: right, ...responses };
     try {
       const [userGuidanceRes, policeProtocolRes] = await Promise.all([
-        fetch("http://localhost:1000/api/user/user-guidance", {
+        fetch("https://namma-rights-server.vercel.app/api/user/user-guidance", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(requestBody),
         }).then((res) => res.json()),
-        fetch("http://localhost:1000/api/user/police-protocol", {
+        fetch("https://namma-rights-server.vercel.app/api/user/police-protocol", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(requestBody),
