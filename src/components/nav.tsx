@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const GlassNav = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <nav className="fixed w-full top-0 z-50">
       {/* Desktop Navigation */}
@@ -12,7 +12,7 @@ const GlassNav = () => {
         <div className="backdrop-blur-lg bg-white/10 border border-white/10 rounded-2xl shadow-lg">
           <div className="flex items-center justify-between p-4">
             {/* Logo */}
-            <div className="flex items-center" onClick={() => useNavigate()("/")}>
+            <div className="flex items-center" onClick={() => navigate("/")}>
               <span className="text-black text-2xl font-bold">NammaRights</span>
             </div>
 
@@ -25,7 +25,7 @@ const GlassNav = () => {
                 Terms Of Use
               </a>
               
-              <button className="bg-white/10 hover:bg-white/20 px-6 py-2 rounded-xl text-black transition-all" onClick={() => useNavigate()("/categories")}>
+              <button className="bg-white/10 hover:bg-white/20 px-6 py-2 rounded-xl text-black transition-all" onClick={() => navigate("/categories")}>
                 Get Started
               </button>
             </div>
@@ -50,7 +50,7 @@ const GlassNav = () => {
                   Terms of use
                 </a>
              
-                <button className="bg-white/10 hover:bg-white/20 px-6 py-2 rounded-xl text-black mt-4" onClick={() => useNavigate()("/categories")}>
+                <button className="bg-white/10 hover:bg-white/20 px-6 py-2 rounded-xl text-black mt-4" onClick={() => navigate("/categories")}>
                   Get Started
                 </button>
               </div>
